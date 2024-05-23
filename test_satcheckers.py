@@ -21,7 +21,7 @@ location = "98053" #your zip code
 distance = "100 miles" #whatever your want (has to be on the website as an option)
 class TestSatchecker():
     def setup_method(self):
-        service = Service('chromedriver.exe')
+        service = Service('chrome-win64')
         self.driver = webdriver.Chrome(service=service)
         self.driver.implicitly_wait(10)
         self.vars = {}
